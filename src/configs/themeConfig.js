@@ -6,7 +6,7 @@ import logo from "@src/assets/images/logo/logo.svg";
 //Template config options
 const themeConfig = {
   app: {
-    appName: "Vuexy",
+    appName: "ECOMMERCE",
     appLogoImage: logo,
   },
   layout: {
@@ -16,11 +16,11 @@ const themeConfig = {
     contentWidth: "boxed", // full, boxed
     menu: {
       isHidden: false,
-      isCollapsed: false,
+      isCollapsed: true,
     },
     navbar: {
       // ? For horizontal menu, navbar type will work for navMenu type
-      type: "floating", // static , sticky , floating, hidden
+      type: "static", // static , sticky , floating, hidden
       backgroundColor: "white", // BS color options [primary, success, etc]
     },
     footer: {

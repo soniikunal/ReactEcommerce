@@ -20,17 +20,19 @@ const getLayout = {
 };
 
 // ** Document title
-const TemplateTitle = "%s - Vuexy React Admin Template";
+const TemplateTitle = "e-Commerce";
 
 // ** Default Route
 const DefaultRoute = "/home";
 
 const Home = lazy(() => import("../../views/Home"));
 const SecondPage = lazy(() => import("../../views/SecondPage"));
-const Login = lazy(() => import("../../views/Login"));
-const Register = lazy(() => import("../../views/Register"));
+// AuthRoutes
+const Login = lazy(() => import("../../views/Auth/Login"));
+const Register = lazy(() => import("../../views/Auth/Register"));
 const ForgotPassword = lazy(() => import("../../views/ForgotPassword"));
 const Error = lazy(() => import("../../views/Error"));
+const ProfileView = lazy(() => import("../../views/Profile/Details"));
 
 // ** Merge Routes
 const Routes = [
@@ -74,6 +76,10 @@ const Routes = [
     meta: {
       layout: "blank",
     },
+  },
+  {
+    path: "/profile-view",
+    element: <ProfileView />, 
   },
 ];
 
