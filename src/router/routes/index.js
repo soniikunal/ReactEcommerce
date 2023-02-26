@@ -30,9 +30,12 @@ const SecondPage = lazy(() => import("../../views/SecondPage"));
 // AuthRoutes
 const Login = lazy(() => import("../../views/Auth/Login"));
 const Register = lazy(() => import("../../views/Auth/Register"));
-const ForgotPassword = lazy(() => import("../../views/ForgotPassword"));
+const ForgotPassword = lazy(() => import("../../views/Auth/ForgotPassword"));
 const Error = lazy(() => import("../../views/Error"));
+// Users
 const ProfileView = lazy(() => import("../../views/Profile/Details"));
+// const AllUsers = lazy(() => import("../../views/Profile/Details"));
+
 
 // ** Merge Routes
 const Routes = [
