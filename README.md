@@ -1,2 +1,0 @@
-# ReactEcommerce
-Ecommerce in React
