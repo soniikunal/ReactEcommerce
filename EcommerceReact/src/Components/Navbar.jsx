@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Search, AddShoppingCartRounded } from "@mui/icons-material";
 import Badge from "@mui/material/Badge";
+import { Button } from "@mui/material";
 
 const Container = styled.div`
   height: 60px;
@@ -10,7 +11,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
-  margin-bottom: '10px' ;
+  margin-bottom: "10px";
   justify-content: space-between;
 `;
 
@@ -33,7 +34,8 @@ const Center = styled.div`
 `;
 
 const SearchContainer = styled.div`
-  padding: 10px;
+  /* padding: 10px; */
+  height: 40px;
   display: flex;
   align-items: center;
   margin-left: 25px;
@@ -41,7 +43,10 @@ const SearchContainer = styled.div`
 `;
 
 const SearchInput = styled.input`
-  // border: none ;
+  padding: 0px 15px;
+  flex: 8;
+  border: none;
+  height: -webkit-fill-available; 
 `;
 
 const LogoContainer = styled.h1`
@@ -56,26 +61,34 @@ const MenuItems = styled.div`
   margin-left: 25px;
 `;
 
+const MenuItms = styled.div`
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
+`;
+
 export const Navbar = () => {
   return (
     <Container>
       <Wrapper>
         <Left>
-          <LogoContainer>LAMA</LogoContainer>
+          <LogoContainer>FastShop</LogoContainer>
         </Left>
         <Center>
           <SearchContainer>
             <SearchInput />
-            <Search />
+            <Button>
+              <Search />
+            </Button>
           </SearchContainer>
         </Center>
         <Right>
           <MenuItems>Register</MenuItems>
           <MenuItems>Login</MenuItems>
           <MenuItems>
-          <Badge badgeContent={4} color="primary">
-            <AddShoppingCartRounded></AddShoppingCartRounded>
-          </Badge>
+            <Badge badgeContent={4} color="primary">
+              <AddShoppingCartRounded></AddShoppingCartRounded>
+            </Badge>
           </MenuItems>
         </Right>
       </Wrapper>
