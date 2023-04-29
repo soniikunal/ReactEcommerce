@@ -22,10 +22,20 @@ export const sliderItem = [
     },
    
 ]
-export const Categories = [
+export const CategoriesData = [
     {
-        // id:1,
-        // img: ,
-        // title: , 
+        id:1,
+        img: 'https://img.freepik.com/free-psd/isolated-black-t-shirt-front_125540-1167.jpg?size=626&ext=jpg',
+        title: 't-shirt', 
+    },
+    {
+        id:2,
+        img: 'https://img.freepik.com/free-psd/isolated-black-t-shirt-front_125540-1167.jpg?size=626&ext=jpg',
+        title: 'shirt', 
+    },
+    {
+        id:3,
+        img: 'https://img.freepik.com/free-psd/isolated-black-t-shirt-front_125540-1167.jpg?size=626&ext=jpg',
+        title: 'Kurta', 
     },
 ]

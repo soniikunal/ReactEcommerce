@@ -94,7 +94,7 @@ export const Slider = () => {
       </Arrow>
       <Wrapper slideX={slideX}>
         {sliderItem.map((e) => (
-          <Slide bg={e.bg}>
+          <Slide bg={e.bg} key={e.id}>
             <ImagContainer>
               <Image src={e.link} />
             </ImagContainer>
