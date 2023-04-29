@@ -10,6 +10,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
+  margin-bottom: '10px' ;
   justify-content: space-between;
 `;
 
