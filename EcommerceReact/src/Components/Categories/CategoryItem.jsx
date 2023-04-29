@@ -19,7 +19,6 @@ const Title = styled.h1`
 `;
 const Info = styled.div`
   display: flex;
-
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -33,8 +32,8 @@ const Info = styled.div`
 const Button = styled.button`
   background-color: white;
   cursor: pointer;
-padding:10px;
-border: none;
+  padding: 10px;
+  border: none;
 `;
 export const CategoryItem = ({ item }) => {
   return (
