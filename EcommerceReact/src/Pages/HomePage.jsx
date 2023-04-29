@@ -5,6 +5,7 @@ import { Slider } from "../Components/Slider";
 import { Categories } from "../Components/Categories/Categories";
 import { Products } from "../Components/Products/Products";
 import { NewsLetter } from "../Components/NewsLetter";
+import { Footer } from "../Components/Footer/Footer";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Categories />
       <Products />
       <NewsLetter />
+      <Footer />
     </>
   );
 };
