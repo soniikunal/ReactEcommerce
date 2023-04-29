@@ -68,7 +68,7 @@ const ContactDetail = styled.div`
   margin-left: 10px;
 `;
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <Container>
       <Left>
@@ -122,3 +122,5 @@ export const Footer = () => {
     </Container>
   );
 };
+
+export default Footer

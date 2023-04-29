@@ -2,7 +2,7 @@ import { Send } from "@mui/icons-material";
 import styled from "styled-components";
 
 const Container = styled.div`
-  height: 30vh;
+  height: 250px;
   background-color: aquamarine;
   display: flex;
   text-align: center;
@@ -42,7 +42,7 @@ const Button = styled.button`
   border: none;
 `;
 
-export const NewsLetter = () => {
+const NewsLetter = () => {
   return (
     <Container>
       <Title>Newsletter</Title>
@@ -56,3 +56,5 @@ export const NewsLetter = () => {
     </Container>
   );
 };
+
+export default NewsLetter
